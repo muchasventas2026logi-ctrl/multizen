@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiZen | Todo lo que necesitas</title>
+    <meta name="description" content="Encuentra los mejores productos y servicios en MultiZen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="FOTO PERFIL.jpg" alt="MultiZen Logo">
+                
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="politicas-privacidad.html">Privacidad</a>
+                <a href="terminos-condiciones.html">Términos</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#inicio" class="mobile-link">Inicio</a>
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+            <a href="politicas-privacidad.html" class="mobile-link">Privacidad</a>
+            <a href="terminos-condiciones.html" class="mobile-link">Términos</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg" style="background-image: url('PORTADA.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p style="font-size: 1rem; color: #94a3b8; margin-bottom: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Una empresa de MultiZen</p>
+            <h1>Bienvenido a MultiZen</h1>
+            <p>Tu marketplace de confianza. Encuentra productos de calidad y el mejor servicio en un solo lugar.</p>
+            <a href="#servicios" class="btn btn-primary">Descubre Más</a>
+        </div>
+    </section>
+
+    <!-- Servicios (Inventado) -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Qué ofrecemos?</h2>
+                <p>Nuestra plataforma está diseñada para brindarte la mejor experiencia.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Envío Rápido</h3>
+                    <p>Entrega segura y a tiempo a tu domicilio para que no tengas que esperar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💎</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Seleccionamos cuidadosamente cada artículo para garantizar los mejores estándares.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎧</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Nuestro equipo está siempre disponible para ayudarte con cualquier consulta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <p>Estamos aquí para ayudarte. Contáctanos a través de nuestros canales oficiales o visítanos.</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Razón Social:</strong> MultiZen
+                        </li>
+                        <li>
+                            <strong>NIT:</strong> 900661159-2
+                        </li>
+                        <li>
+                            <strong>Domicilio Principal:</strong> CRA 02 OESTE #5-60-80<br>Cali - Valle
+                        </li>
+                        <li>
+                            <strong>Correo Electrónico:</strong> <a href="mailto:ventas@multizen.site">ventas@multizen.site</a>
+                        </li>
+                        <li>
+                            <strong>Teléfono Comercial:</strong> <a href="tel:3046482996">3046482996</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="FOTO PERFIL.jpg" alt="MultiZen Logo" class="footer-logo">
+                <p>&copy; 2024 MultiZen. Una empresa de <strong>MultiZen</strong>.<br>Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="politicas-privacidad.html">Políticas de Privacidad</a>
+                <a href="terminos-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
